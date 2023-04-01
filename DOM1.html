@@ -21,6 +21,7 @@
     <button onclick="change()">change</button>
 </body>
 <script>
+    // The DOM is one of the most-used APIs on the Web because it allows code running in a browser to access and interact with every element in the document. Elements can be created, moved and changed. Event listeners can be added to elements and triggered on occurrence of a given event.
 function green(){
     var greenBg = document.getElementById('green')
     greenBg.setAttribute("class","green")
@@ -34,7 +35,7 @@ function remove(){
 function change(){
     var greenBg = document.getElementById('green')
    var redgreen =  greenBg.getAttribute("class")
-redgreen.setAttribute("class",redgreen + ".red")
+greenBg.setAttribute("class", redgreen + " red")
 }
 
 
