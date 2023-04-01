@@ -9,16 +9,34 @@
 .green{
     background-color: green;
 }
+.red{
+    border: 4px solid red;
+}
     </style>
 </head>
 <body>
     <div id="green">green</div>
     <button onclick="green()">click</button>
+    <button onclick="remove()">remove</button>
+    <button onclick="change()">change</button>
 </body>
 <script>
 function green(){
     var greenBg = document.getElementById('green')
     greenBg.setAttribute("class","green")
 }
+
+function remove(){
+    var greenBg = document.getElementById('green')
+    greenBg.removeAttribute("class","green")
+}
+
+function change(){
+    var greenBg = document.getElementById('green')
+   var redgreen =  greenBg.getAttribute("class")
+redgreen.setAttribute("class",redgreen + ".red")
+}
+
+
 </script>
 </html>
