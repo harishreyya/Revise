@@ -94,4 +94,4 @@ total = function(el,ac){
     return ac + el
 }
 console.log(items)
-console.log(items.reduce(total))
+console.log(items.reduce(total));
