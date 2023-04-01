@@ -28,6 +28,40 @@ sum(4, 5, print)
 // each of these takes an argument.
 
 let items = [1,4,5,3,6,6,2];
+
+// forEach:
+// The forEach() method executes a provided function once for each array element.
+
+// Syntax
 items.forEach(function(el){
     console.log(el*4)
 });
+console.log("----------")
+triple = function(num,index){
+    console.log(index,"index")
+console.log(num*3);
+
+}
+
+items.forEach(triple);
+
+
+// ----------------------------------
+
+// map:
+
+// The map() method creates a new array with the results of calling a provided function on every element in the calling array.
+
+// Syntax
+
+double = function (el){
+    return el*2
+}
+
+console.log(items.map(double));
+console.log("----")
+console.log(items);
+
+let strings = ["2","3","4"];
+console.log(strings)
+console.log(strings.map(Number))
