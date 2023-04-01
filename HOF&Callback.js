@@ -65,3 +65,33 @@ console.log(items);
 let strings = ["2","3","4"];
 console.log(strings)
 console.log(strings.map(Number))
+
+// ----------------
+
+// filter:
+
+// The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+
+// Syntax
+
+isOdd = function(el){
+    return el%2==1;
+}
+
+console.log(items.filter(isOdd));
+
+// ----------------
+
+// reduce:
+
+// The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+
+// Syntax
+
+total = function(el,ac){
+    console.log(ac,"ac")
+    console.log(el,"el")
+    return ac + el
+}
+console.log(items)
+console.log(items.reduce(total))
