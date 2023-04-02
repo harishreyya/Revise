@@ -10,12 +10,13 @@
             display: grid;
             grid-template-columns: 100px 100px 100px;
             grid-gap: 20px;
+            /* background-color: blueviolet; */
         }
         #boxes > div{
             width: 100px;
             height: 100px;
             margin-bottom: 20px;
-           
+           /* background-color: brown; */
         }
     </style>
 </head>
@@ -28,8 +29,9 @@
         <div>5</div>
         <div>6</div>
     </div>
-
+<button id="btn">create divs</button>
     <script>
+       
         var boxes = document.querySelectorAll('#boxes > div');
         for(i=0;i<boxes.length;i++){
      boxes[i].style.backgroundColor = "green"
@@ -41,7 +43,20 @@ function changecolor(e){
     }
     e.target.style.backgroundColor = "black"
 }
-   
+//    ---------------------
+
+var btn = document.getElementById('btn');
+        btn.addEventListener('click',createbox);
+
+
+function createbox(){
+    let div = document.createElement('div');
+    div.textContent="new one";
+    div.style.border = "1px solid black"
+    let box = document.getElementById('boxes')
+    box.appendChild(div);
+}
+
     </script>
 </body>
 </html>
