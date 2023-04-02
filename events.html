@@ -30,6 +30,21 @@
         <div>6</div>
     </div>
 <button id="btn">create divs</button>
+
+<form action="submit">
+    <label for="name">name</label>
+    <input type="text" name="name" id="name">
+    <label for="occupation">occupation</label>
+    <input type="text" name="occupation" id="occupation">
+   <input type="submit" value="submit"/>
+</form>
+
+<div id="display">
+<div></div>
+</div>
+<!-- --------------------------------------------- -->
+
+
     <script>
        
         var boxes = document.querySelectorAll('#boxes > div');
@@ -55,6 +70,21 @@ function createbox(){
     div.style.border = "1px solid black"
     let box = document.getElementById('boxes')
     box.appendChild(div);
+}
+// --------------
+
+var frm = document.querySelector('form')
+var display = document.querySelector("#display > div")
+frm.addEventListener('submit', formsubmit);
+
+function formsubmit(e){
+    e.preventDefault()
+    let name = document.getElementById('name').value;
+let occupation = document.getElementById('occupation').value;
+
+display.textContent=  name + occupation;
+ document.getElementById('name').value = "";
+document.getElementById('occupation').value = "";
 }
 
     </script>
