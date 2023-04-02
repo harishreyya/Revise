@@ -22,6 +22,35 @@
 </body>
 <script>
     // The DOM is one of the most-used APIs on the Web because it allows code running in a browser to access and interact with every element in the document. Elements can be created, moved and changed. Event listeners can be added to elements and triggered on occurrence of a given event.
+
+    // URL of a page
+document.URL
+// title of a page
+document.title
+// domain
+document.domain
+// doctype
+document.doctype
+// head
+document.head
+// body
+document.body
+// all elements
+document.all
+// forms
+document.forms
+// links
+document.links
+// images
+document.images
+
+// there are many more of these
+
+// Some of the responses will contain a list of all nodes
+// Even though this may look like an array
+// It is not
+// You can confirm this by doing Array.isArray( document.images )
+// But you can still use a for loop and access the elements via a bracket notation
 function green(){
     var greenBg = document.getElementById('green')
     greenBg.setAttribute("class","green")
