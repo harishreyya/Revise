@@ -30,7 +30,7 @@
         <div>6</div>
     </div>
 <button id="btn">create divs</button>
-
+<!-- --------------------------------------------- -->
 <form action="submit">
     <label for="name">name</label>
     <input type="text" name="name" id="name">
@@ -44,6 +44,7 @@
 </div>
 <!-- --------------------------------------------- -->
 
+<button id = "changeColor">Click here to change my color</button>
 
     <script>
        
@@ -87,6 +88,20 @@ display.textContent=  name + occupation;
 document.getElementById('occupation').value = "";
 }
 
+// ------------------------
+var changeButton = document.getElementById('changeColor');
+
+function random(number){
+  return Math.floor(Math.random()*number);
+}
+
+function switchColor(){
+    var randomColor = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+    changeButton.style.backgroundColor = randomColor;
+}
+changeButton.addEventListener('click', switchColor);
+
+//    ---------------------
     </script>
 </body>
 </html>
