@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        .comments {
+  margin-top: 20px;
+}
+
+.comment {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.reply {
+  margin-left: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="comments">
+        <div class="comment">
+          <p>This is the first comment</p>
+          <div class="reply">
+            <p>Reply to the first comment</p>
+          </div>
+        </div>
+        <div class="comment">
+          <p>This is the second comment</p>
+          <div class="reply">
+            <p>Reply to the second comment</p>
+            <div class="reply">
+              <p>Reply to the reply</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    <script>
+$(document).ready(function() {
+  $(".reply").hide(); // Hide all reply comments by default
+
+  // Show/hide reply comments on click
+  $(".comment").on("click", function() {
+    $(this).find(".reply").slideToggle();
+  });
+});
+    </script>
+</body>
+</html>
