@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+      
+    </div>
+    
+    <button onclick="stop()">stop</button>
+
+    <script>
+        let images = ["https://i.pinimg.com/564x/a2/45/24/a24524c60d6ea16adf8cf6aad6b45e77.jpg","https://i.pinimg.com/564x/be/66/20/be6620ae5749890854f3d467402c8b10.jpg","https://i.pinimg.com/564x/92/37/74/923774715bd4ec269e1fccf2dc00881d.jpg"]
+
+        let display = document.getElementById("container")
+
+        let counter = 0;
+
+        let interval =  setInterval(function(){
+            let img = document.createElement('img');
+
+           img.src = images[counter];
+           counter+=1
+
+           if(counter == images.length){
+            counter = 0;
+           }
+            display.innerHTML = ""
+         display.append(img)
+
+        },2000)
+
+  function stop(){
+    clearInterval(interval)
+  }
+       
+    </script>
+</body>
+</html>
