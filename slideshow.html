@@ -5,16 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        img{
+          width: 300px;  
+          height: 400px;
+          margin: auto;
+        }
+
+        .flex{
+display: flex;
+justify-content: space-evenly;
+        }
+
+        button{
+            width: 100px;
+        }
+
+        .btn-wrap{
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
 </head>
 <body>
+    <div class="flex">
     <div id="container">
       
     </div>
     
-    <button onclick="stop()">stop</button>
-
+    
+    
+  
+    <img src="https://i.pinimg.com/564x/92/37/74/923774715bd4ec269e1fccf2dc00881d.jpg" alt="">
+ 
+</div>
+<div class="btn-wrap">
+<button onclick="stop()">stop</button>
+</div>
     <script>
-        let images = ["https://i.pinimg.com/564x/a2/45/24/a24524c60d6ea16adf8cf6aad6b45e77.jpg","https://i.pinimg.com/564x/be/66/20/be6620ae5749890854f3d467402c8b10.jpg","https://i.pinimg.com/564x/92/37/74/923774715bd4ec269e1fccf2dc00881d.jpg"]
+        let images = ["https://i.pinimg.com/564x/a2/45/24/a24524c60d6ea16adf8cf6aad6b45e77.jpg","https://i.pinimg.com/564x/be/66/20/be6620ae5749890854f3d467402c8b10.jpg","https://i.pinimg.com/564x/92/37/74/923774715bd4ec269e1fccf2dc00881d.jpg","https://i.pinimg.com/564x/1b/d7/c3/1bd7c375605140fab9c81eadb48e1316.jpg"]
 
         let display = document.getElementById("container")
 
@@ -32,7 +62,7 @@
             display.innerHTML = ""
          display.append(img)
 
-        },2000)
+        },400)
 
   function stop(){
     clearInterval(interval)
