@@ -14,6 +14,7 @@ console.log(p1,p2,p3);
 
 
 let str = new String('harish');
+// when any new key word added in front then its object
 console.log(str)
 console.log(str.toString())
 console.log(str.charAt(0))
