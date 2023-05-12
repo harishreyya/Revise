@@ -5,7 +5,7 @@ var arrToConvert = [[0,0,1],[2,3,3],[4,4,5]];
 const numbers = [[1,2], [2,3], [3,4]];
 const result = [].concat(...arrToConvert);
 
-// console.log(result);
+console.log(result);
 
 let str = "good boy bad girl";
 let str1=""
