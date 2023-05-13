@@ -16,9 +16,10 @@ for(i=str.length-1;i>=0;i--){
 }
 
 
-let arr = string.split(" ");
+let arr = str.split(" ");
 res=[]
-
+arr.reverse()
+console.log(arr)
 for(i=arr.length-1;i>=0;i--){
 res.push(arr[i])
 }
