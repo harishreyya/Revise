@@ -24,3 +24,20 @@ for(i=arr.length-1;i>=0;i--){
 res.push(arr[i])
 }
 console.log(res.join(" "))
+
+
+// var , let & const
+
+for(var i = 0; i< 6; i++){
+    console.log(i)
+}
+
+console.log("------------------")
+for(let i = 0; i< 6; i++){
+    console.log(i)
+}
+console.log("------------------")
+for(const i = 0; i< 6; i++){
+    console.log(i)
+}
+
