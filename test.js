@@ -29,15 +29,19 @@ console.log(res.join(" "))
 // var , let & const
 
 for(var i = 0; i< 6; i++){
-    console.log(i)
+   setTimeout(() => {
+    console.log("var",i)
+   }, 2000)
 }
 
 console.log("------------------")
 for(let i = 0; i< 6; i++){
-    console.log(i)
+    setTimeout(() => {
+        console.log("let",i)
+       }, 2)
 }
 console.log("------------------")
-for(const i = 0; i< 6; i++){
-    console.log(i)
+for( i = 0; i< 6; i++){
+    console.log("no settimeout",i)
 }
 
