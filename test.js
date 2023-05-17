@@ -45,14 +45,50 @@
 //     console.log("no settimeout",i)
 // }
 
-console.log(m)
-console.log(n)
-console.log(x)
- const x = 4
+// console.log(m)
+// console.log(n)
+// console.log(x)
+//  const x = 4
+// {
+//     let n = 0
+//     {
+//         var m = 2
+//     }
+// }
+
+let arr = [{
+    name:"harish",
+    age:20
+},
 {
-    let n = 0
-    {
-        var m = 2
-    }
+    name:"antara",
+    age:22
+},{
+    name:"intu",
+    age:22
+}]
+
+// console.log(arr)
+// let ans = JSON.stringify(arr)
+// console.log(JSON.parse(ans))
+
+// let car = cars.find(car => car.color === "red");
+let find = arr.find(arr => arr.age === 22)
+
+console.log(find)
+
+let filter = arr.filter(arr => arr.age === 22)
+
+console.log(filter)
+
+let sides = [2,4,6,5]
+
+let area = sides.map( side => side*side)
+console.log(area)
+let some = sides.forEach(circumfrence)
+
+function circumfrence(side){
+ 4*side
 }
 
+console.log(some)
