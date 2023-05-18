@@ -156,5 +156,14 @@ var array = [1,2,3,4] // var ,const ,let  same result
 
 delete array[2];
 
-console.log(array)//[ 1, 2, <1 empty item>, 4 ]
-console.log(array.length)//4
+console.log(array)//[ 1, 2, <1 empty item>, 4 ] ..............var ,const ,let  same result
+
+console.log(array.length)//4 ..........var ,const ,let  same result
+// -------------------------------------
+
+const longy = [1,2,3,4,5]
+
+longy.length= 0
+
+console.log(longy)// []
+console.log(longy.length)// 0
