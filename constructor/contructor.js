@@ -5,7 +5,7 @@ function player(n,t){
 
 var myPlayer = new player('adam','gilcrisht');
 
-console.log(myPlayer)
+// console.log(myPlayer)
 
 
 // call
@@ -14,25 +14,20 @@ var person = {
     name:'harish'
 }
 
-var person2 = {
-    name:'antara'
-}
 
 function name(m,c){
-    console.log(this.name)
+    // console.log(this.name)
     this.age = m
     this.city = c
     // console.log(m)
 }
 
 name.call(person)// this keyword will be pointing to person
-name.call(person2)//this keyword will be pointing to person2 
-// name.call(person,21)
+name.call(person,21,"pune")
 
-// console.log(person)
-
+console.log(person)
 // apply (only commas changes to array else evrything same in call and apply)
-// name.apply(person,[21,'pune'])
+name.apply(person,[21,'pune'])
 // console.log(person)
 
 // bind (same as call,apply but we need to set it and excute whenever we require it)
