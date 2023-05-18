@@ -124,6 +124,25 @@ let object={
     address:{
         city:"palasa",
         state:"andhra pradesh"
-    } //object under obj
+    } //object under object
 }
 console.log(object.address.city)
+
+// --------------
+
+// hoisting 
+
+// JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code.
+
+// -----------------
+
+//JavaScript is an interpreted language, not a compiled language. A program such as C++ or Java needs to be compiled before it is run. The source code is passed through a program called a compiler, which translates it into bytecode that the machine understands and can execute.
+
+// An interpreted language is a language in which the implementations execute instructions directly without earlier compiling a program into machine language.
+
+// ------------
+
+// A compiled language is a programming language that is converted into machine code so that the processor can execute it. The compiled languages are usually compiled, not interpreted.
+
+//  The compiled programs run faster than interpreted programs. The interpreted programs run slower than the compiled program.
+
