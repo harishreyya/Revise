@@ -163,7 +163,16 @@ console.log(array.length)//4 ..........var ,const ,let  same result
 
 const longy = [1,2,3,4,5]
 
-longy.length= 0
+longy.length= 2;
 
+console.log(longy)// [ 1, 2 ]
+console.log(longy.length)// 2
+
+longy.length= 1;
+console.log(longy)// [ 1 ]
+console.log(longy.length)// 1 
+
+longy.length= 0;
 console.log(longy)// []
-console.log(longy.length)// 0
+console.log(longy.length)// 0 
+// --------------------------
