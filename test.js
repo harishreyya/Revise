@@ -150,3 +150,11 @@ console.log(object.address.city)
 
 // diference b/w interprted and complied
 // Interpreted language follows one step to get from source code to execution. A compiled language is converted into machine code so that the processor can execute it. An interpreted language is a language in which the implementations execute instructions directly without earlier compiling a program into machine language.
+
+
+var array = [1,2,3,4] // var ,const ,let  same result
+
+delete array[2];
+
+console.log(array)//[ 1, 2, <1 empty item>, 4 ]
+console.log(array.length)//4
