@@ -175,4 +175,6 @@ console.log(longy.length)// 1
 longy.length= 0;
 console.log(longy)// []
 console.log(longy.length)// 0 
+
 // --------------------------
+// ----
