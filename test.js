@@ -160,7 +160,7 @@ console.log(array)//[ 1, 2, <1 empty item>, 4 ] ..............var ,const ,let  s
 
 console.log(array.length)//4 ..........var ,const ,let  same result
 // -------------------------------------
-
+// -----
 const longy = [1,2,3,4,5]
 
 longy.length= 2;
@@ -177,4 +177,4 @@ console.log(longy)// []
 console.log(longy.length)// 0 
 
 // --------------------------
-// ----
+// -------
