@@ -178,3 +178,9 @@ console.log(longy.length)// 0
 
 // --------------------------
 // -----------
+
+
+let see = 10;
+let seen = ++see;
+see++;
+console.log(see,seen)
