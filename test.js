@@ -184,3 +184,9 @@ let see = 10;
 let seen = ++see;
 see++;
 console.log(see,seen)
+// ------
+console.log(typeof(NaN))
+console.log(typeof(null))
+console.log(typeof(undefined))
+
+// ------------
