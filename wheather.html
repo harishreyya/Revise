@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>wheather</h1>
+    <input type="text" id="city" placeholder="enter the city">
+    <button onclick="wheather()">click</button>
+    <div id="show"></div>
+   
+</body>
+<script>
+    // 9c15778ada5a7828b54080e243e2a8e4
+
+let container = document.getElementById('show')
+
+async function wheather(){
+    let city = document.getElementById('city').value;
+    let res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=9c15778ada5a7828b54080e243e2a8e4`)
+    let data = await res.json()
+    console.log(data)
+    showWeather(data)
+}
+
+function showWeather(data){
+    let name = document.createElement('p');
+    name.innerText = data.name
+    let temperature = document.createElement('p');
+    temperature.innerText = Math.round(data.main.temp - 273)
+    container.append(name,temperature)
+}
+
+</script>
+</html>
