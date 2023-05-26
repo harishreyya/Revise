@@ -190,3 +190,15 @@ console.log(typeof(null))
 console.log(typeof(undefined))
 
 // -------
+
+// --------closures
+
+function greet(){
+    let n = 'raj';
+    return function(){
+        console.log(n)
+    }
+}
+let x = greet()
+console.log(x) // returns the function as output
+x() // raj is the output
