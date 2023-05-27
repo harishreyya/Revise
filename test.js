@@ -201,4 +201,4 @@ function greet(){
 }
 let x = greet()
 console.log(x) // returns the function as output
-x() // raj is the output
+x() // raj is the output 
