@@ -62,7 +62,13 @@
         #show-warning{
             font-size: 38px;
             color: red;
+            animation: flip 1s infinite;
         }
+        @keyframes flip {
+      0%,80% {
+       transform: rotateY(360deg) 
+     }
+}
     </style>
 </head>
 <body>
