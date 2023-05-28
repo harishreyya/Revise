@@ -28,22 +28,24 @@
            justify-content: center;
            align-items: center;
            font-size: xx-large;
+           cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <h1>tick tak toe</h1>
+    <h1>Tic Tak Toe</h1>
     <div class="box">
-        <div id="boxes-1" onclick="show('1')"></div>
-        <div id="boxes-2" onclick="show('2')"></div>
-        <div id="boxes-3" onclick="show('3')"></div>
-        <div id="boxes-4" onclick="show('4')"></div>
-        <div id="boxes-5" onclick="show('5')"></div>
-        <div id="boxes-6" onclick="show('6')"></div>
-        <div id="boxes-7" onclick="show('7')"></div>
-        <div id="boxes-8" onclick="show('8')"></div>
-        <div id="boxes-9" onclick="show('9')"></div>
+        <div id="boxes-1" class="block" onclick="show('1')"></div>
+        <div id="boxes-2" class="block" onclick="show('2')"></div>
+        <div id="boxes-3" class="block" onclick="show('3')"></div>
+        <div id="boxes-4" class="block" onclick="show('4')"></div>
+        <div id="boxes-5" class="block" onclick="show('5')"></div>
+        <div id="boxes-6" class="block" onclick="show('6')"></div>
+        <div id="boxes-7" class="block" onclick="show('7')"></div>
+        <div id="boxes-8" class="block" onclick="show('8')"></div>
+        <div id="boxes-9" class="block" onclick="show('9')"></div>
     </div>
+    <button class="reset" onclick="reset()">RESET</button>
 </body>
 <!-- <script src="index.js"></script> -->
 <script>
@@ -51,15 +53,22 @@
       function show(number){
   if(count == 0){
    let div = document.getElementById("boxes-"+ number);
-div.innerText = "X";
+   if(div.innerText==""){
+    div.innerText = "A";
 count = 1;
 console.log(count)
+   }
+
 }else{
    let div = document.getElementById("boxes-"+ number);
-div.innerText = "O";
+   if(div.innerText==""){
+    div.innerText = "H";
 count = 0;
 console.log(count)
+   }
   }
+
+  
 }
   
 
