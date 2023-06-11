@@ -27,7 +27,7 @@ console.log(employee);
 //     location: 'USA'
 //   }
 
-// ---------------------------
+// -------------------------------
 
 // If objects have a property with the same name, then the right-most object property overwrites the previous one. For example:
 
