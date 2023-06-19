@@ -242,3 +242,9 @@ console.log(number + 1);
 console.log(number++);
 console.log(number);
 console.log(++number);
+
+
+const obj1 = {}
+const obj2 = obj1
+const obj3 = {}
+console.log(obj1 === obj2, obj1 === obj3)
