@@ -204,3 +204,41 @@ console.log(x) // returns the function as output
 x() // raj is the output 
 
 
+function hi(){
+    console.log("jhvsj")
+}
+
+console.log(typeof hi)
+
+// let array = [1,2,3,4,5,6]
+
+// [a,b, , ...rest] = array;
+
+// console.log(a)
+// console.log(b)
+// console.log(c)
+// console.log(rest)
+// let c
+
+let data = {daa:18}
+if(data === {daa:18}){
+    console.log("yes")
+} else if(data == {daa:18}){
+    console.log("no")}else{
+        console.log("gdxh")
+    }
+
+    let objec = {a:"jfjut"};
+    let arre = [12,3,4]
+
+    console.log(typeof objec)
+    console.log(typeof arre)
+    console.log(objec === arre)
+
+    let number = "78";
+let makingnumber = +number
+console.log(makingnumber + 1);
+console.log(number + 1);
+console.log(number++);
+console.log(number);
+console.log(++number);
